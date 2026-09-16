@@ -33,3 +33,13 @@
 - เปลี่ยน Status จาก Draft v1 เป็น Draft v2 และอัปเดตวันที่เป็น 2569-09-16
 
 ---
+
+## 2569-09-16 10:40 คำสั่ง: /plan
+
+- เครื่องมือ: Copilot ใน Codespaces
+- ผลลัพธ์: specs/001-booking/plan.md
+- Constraint ที่ AI ยังไม่ได้ใช้: ไม่มี
+- AC ที่ทดสอบยาก/ทดสอบไม่ได้ในสภาพแวดล้อมนักศึกษา: AC-BKG-05 (p95 200 คน), AC-BKG-04 (queue retry / SMS mock), AC-BKG-06 (audit log ต้องมีสิทธิ์และ trace จริง)
+- สิ่งที่ AI อยากเดาแต่ไม่ได้เดา: Q-01 และ Q-02 จะถูกเก็บไว้ใน Open Questions ตาม spec
+
+---
