@@ -47,10 +47,20 @@
 ## 2569-09-23 00:00 คำสั่ง: /tasks
 
 - เครื่องมือ: Copilot ใน Codespaces
-- ผลลัพธ์: specs/001-booking/tasks.md
-- จำนวน task ทั้งหมด: 11
-- จำนวน task ที่รอ Q-xx: 1 (T-11 รอ Q-02)
+- ผลลัพน์: specs/001-booking/tasks.md
+- จำนวน task ทั้งหมด: 12
+- จำนวน task ที่รอ Q-xx: 1 (T-12 รอ Q-02)
 - task ที่ยากที่สุด: T-05 และ T-06 เนื่องจากต้องรวม logic การคำนวณช่วงใกล้เคียงและ retry queue ที่มีผลต่อบันทึกและ UX พร้อมกัน
 - AC ที่ทดสอบยากในสภาพแวดล้อมนักศึกษา: AC-BKG-05, AC-BKG-04, AC-BKG-06
+
+---
+
+## 2569-09-23 00:00 คำสั่ง: /implement T-01
+
+- เครื่องมือ: Copilot ใน Codespaces
+- ไฟล์ที่สร้างหรือแก้: backend/app/__init__.py, backend/app/db/__init__.py, backend/app/db/models.py, backend/tests/test_T_01_schema.py
+- ผลทดสอบ: `cd backend && pytest tests/test_T_01_schema.py -q` => 1 passed in 0.31s
+- Constraint ที่เกี่ยวข้อง: CON-TECH-01, DOM-PDPA-01, IF-HIS-01 ถูกทำให้เป็นจริงใน model schema โดยมี tables slots, bookings, audit_logs และไม่มีคอลัมน์เลขบัตรประชาชนใน bookings
+- สิ่งที่เกือบต้องเดาแต่ถามแทน: ไม่พบสิ่งที่ต้องเดา เพราะ task นี้ตรงไปตรงมาจาก schema และ constraints ของ spec
 
 ---
